@@ -18,7 +18,7 @@ def get_iss_location():
     current_time = datetime.datetime.now().strftime("%Y%m%dT%H%M%SZ")
     start_time = (datetime.datetime.now() - datetime.timedelta(hours=1.5)).strftime("%Y%m%dT%H%M%SZ")
     
-    api_key = "UE1QFmk5aCQhSQzkBin5QHUfOj7bn0jElDFMOPei"
+    api_key = "DEMO_KEY"
     api_base = "https://sscweb.sci.gsfc.nasa.gov/WS/sscr/2"
     short_path = f"/locations/iss/{start_time},{current_time}/gse"
     headers = {"Accept": "application/json",
